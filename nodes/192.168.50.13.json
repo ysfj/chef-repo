@@ -1,0 +1,15 @@
+{
+	"nginx": {
+		 "port" :80
+	 },
+	"apache": {
+		"port" :8080
+	},
+	"run_list":[
+		"yum-epel",
+		"nginx",
+		"chef-td-agent",
+		"fluent-plugin-extract_query_params",
+		"apache"
+	]
+}
